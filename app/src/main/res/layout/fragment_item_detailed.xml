@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/Item_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerCrop"
+                    android:translationZ="@android:dimen/app_icon_size"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/Item_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Place Holder food name"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/Item_Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="7dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="99.00"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/Item_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:layout_margin="16dp"
+                    android:lineSpacingExtra="1.5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/minus"
+                        android:layout_width="49dp"
+                        android:layout_height="44dp"
+                        android:elevation="0dp"
+                        android:onClick="count"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/minus_sign" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/plus"
+                        android:layout_width="49dp"
+                        android:layout_height="44dp"
+                        android:elevation="0dp"
+                        android:onClick="count"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/plus_sign" />
+
+                    <TextView
+                        android:id="@+id/counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="30sp"
+                        android:textStyle="normal|bold" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bOrder"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="#6877ca"
+                    android:text="Add To Cart" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

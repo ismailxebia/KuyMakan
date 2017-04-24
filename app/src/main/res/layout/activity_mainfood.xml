@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:fitsSystemWindows="true"
+    tools:context=".XebiaActivity">
+
+    <fragment
+        android:id="@+id/item_frag"
+        android:name="xebia.ismail.kuymakan.Item_Frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></fragment>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:onClick="OpenCart"
+        android:tint="#FFF"
+        app:backgroundTint="#ea6262"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_cart_white" />
+
+</RelativeLayout>
